@@ -75,3 +75,4 @@ insert into employee values
 select name from employee where empid=(select mgrid from employee where name="jatin");
 
 -- With join 
+select b.name from employee a inner join employee b on  a.mgrid = b.empid where a.name="jatin"; 
